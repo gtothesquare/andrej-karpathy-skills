@@ -1,3 +1,7 @@
+Fork from https://github.com/forrestchang/andrej-karpathy-skills
+
+Just copied and modified to make it work locally and control the source.
+
 # Karpathy-Inspired Claude Code Guidelines
 
 A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
@@ -94,9 +98,14 @@ Strong success criteria let the LLM loop independently. Weak criteria ("make it 
 
 **Option A: Claude Code Plugin (recommended)**
 
-```bash
-claude plugins add https://github.com/forrestchang/andrej-karpathy-skills
+From within Claude Code, first add the marketplace:
 ```
+/plugin marketplace add gtothesquare/andrej-karpathy-skills
+```
+
+Then install the plugin:
+```
+/plugin install andrej-karpathy-skills@karpathy-skills
 
 This installs the guidelines as a Claude Code plugin, making the skill available across all your projects.
 
@@ -153,3 +162,5 @@ The goal is reducing costly mistakes on non-trivial work, not slowing down simpl
 ## License
 
 MIT
+
+Original https://github.com/forrestchang/andrej-karpathy-skills
